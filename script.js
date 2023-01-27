@@ -30,6 +30,6 @@ const msg = new SpeechSynthesisUtterance();
   }
   speechSynthesis.addEventListener('voiceschanged',populateVoices);
   voicesDropdown.addEventListener('change', setVoice);
-  options.forEach(option => option.addEventListener('cgange', setOption));
+  options.forEach(option => option.addEventListener('change', setOption));
   speakButton.addEventListener('click', toggle);
   stopButton.addEventListener('click', ()=> toggle(false) );
